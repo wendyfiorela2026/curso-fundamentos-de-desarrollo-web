@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda Tecno</title>
+    <style>
+        body { font-family: Arial; margin: 0; background: #fdf2f8; }
+        header { background: #ec407a; color: white; padding: 15px; text-align: center; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; }
+        .banner { background: #f06292; color: white; padding: 40px; text-align: center; }
+        .productos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; }
+        .producto { background: white; padding: 15px; text-align: center; border-radius: 8px; }
+        .precio { color: #d81b60; font-size: 18px; font-weight: bold; }
+        footer { background: #ec407a; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    </style>
 </head>
 <body>
-    
+
+<header>
+    <h1>Tienda Tecno</h1>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<div class="banner">
+    <h2>Productos Tecnológicos</h2>
+    <p>Los mejores precios</p>
+</div>
+
+<div class="productos">
+    <div class="producto">
+        <h3> Laptop</h3>
+        <p>Intel Core i5</p>
+        <p class="precio">S/ 2,500</p>
+    </div>
+    <div class="producto">
+        <h3> PC Escritorio</h3>
+        <p>8GB RAM</p>
+        <p class="precio">S/ 1,800</p>
+    </div>
+    <div class="producto">
+        <h3> Teclado</h3>
+        <p>Mecánico USB</p>
+        <p class="precio">S/ 89</p>
+    </div>
+    <div class="producto">
+        <h3> Mouse</h3>
+        <p>Inalámbrico</p>
+        <p class="precio">S/ 35</p>
+    </div>
+    <div class="producto">
+        <h3> Router</h3>
+        <p>300 Mbps</p>
+        <p class="precio">S/ 95</p>
+    </div>
+    <div class="producto">
+        <h3> Disco SSD</h3>
+        <p>256 GB</p>
+        <p class="precio">S/ 145</p>
+    </div>
+</div>
+
+<footer>
+    <p>Tienda Tecno - Juliaca | 987 654 321</p>
+</footer>
+
 </body>
 </html>
