@@ -1,0 +1,42 @@
+/* 1. Fondo azul de la ventana */
+body {
+    background-color: #8cb0d4;
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/* 2. El contenedor blanco */
+.galeria-contenedor {
+    background-color: white;
+    padding: 0px;
+    max-width: 900px;
+    margin: 0 auto; /* Centrar en la página */
+    
+    /* --- AQUÍ EMPIEZA LA MAGIA FLEX --- */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cajas bajen a la siguiente fila */
+    gap: 10px;       /* Separación entre filas y columnas */
+}
+
+/* 3. Cada una de las 6 cajas */
+.foto {
+    /* 
+       Cálculo para 3 columnas:
+       100% / 3 = 33.333%
+       Le restamos el espacio del gap (2 gaps de 10px = 20px en total / 3 cajas = 6.66px)
+       Usamos flex: 0 0 para que no crezcan ni se encojan, y respeten el cálculo.
+    */
+    flex: 0 0 calc((100% - 20px) / 3); 
+    
+    aspect-ratio: 1 / 1; /* Hace la caja perfectamente cuadrada */
+    overflow: hidden;    /* Corta la imagen si se sale del cuadrado */
+}
+
+/* 4. Las imágenes dentro de las cajas */
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que las fotos se deformen, las recorta bonito */
+    display: block;    /* Quita un pequeño margen fantasma que ponen las imágenes */
+}
