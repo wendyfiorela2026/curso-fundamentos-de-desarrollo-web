@@ -36,7 +36,9 @@ body {
 /* 4. Las imágenes dentro de las cajas */
 .foto img {
     width: 100%;
-    height: 100%;
+    height: 99%;
     object-fit: cover; /* Evita que las fotos se deformen, las recorta bonito */
     display: block;    /* Quita un pequeño margen fantasma que ponen las imágenes */
 }
+
+/*trabajo*/
